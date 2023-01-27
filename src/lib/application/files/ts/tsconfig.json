@@ -1,21 +1,30 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
-    "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
+    // We don't care about this since Webpack runs Babel after TypeScript
+    "target": "esnext",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "webworker",
+      "es2019"
+    ],
+    "allowJs": true,
     "skipLibCheck": true,
-    "strictNullChecks": <%= strict %>,
-    "noImplicitAny": <%= strict %>,
-    "strictBindCallApply": <%= strict %>,
-    "forceConsistentCasingInFileNames": <%= strict %>,
-    "noFallthroughCasesInSwitch": <%= strict %>
-  }
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react"
+  },
+  "include": [
+    "src",
+    "tests",
+    "plugins",
+    "dev",
+  ]
 }

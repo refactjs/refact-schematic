@@ -1,7 +1,7 @@
 {
-  "name": "@nestjs/schematics",
+  "name": "@refactjs/schematics",
   "version": "9.0.4",
-  "description": "Nest - modern, fast, powerful node.js web framework (@schematics)",
+  "description": "Refact Schematics",
   "main": "dist/index.js",
   "files": [
     "dist/**/*"
@@ -28,18 +28,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nestjs/schematics.git"
+    "url": "git+https://github.com/refactjs/refactjs-schematics.git"
   },
   "contributors": [
-    "ThomRick",
-    "Kamil Mysliwiec",
-    "John Biundo"
+    "Mahdi Pakravan"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/nestjs/schematics/issues"
-  },
-  "homepage": "https://github.com/nestjs/schematics#readme",
   "dependencies": {
     "@angular-devkit/core": "15.0.4",
     "@angular-devkit/schematics": "15.0.4",
